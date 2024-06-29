@@ -15,6 +15,12 @@ on:
     branches: [ "main" ]
 
 jobs:
+
   call-workflow-1-in-local-repo:
     uses: asimmanzoor/java-github-action-app/.github/workflows/maven.yml@main
+    permissions:
+      contents: read
+      packages: write
+      attestations: write
+      id-token: write
    
