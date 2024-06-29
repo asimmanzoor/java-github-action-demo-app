@@ -18,8 +18,7 @@ jobs:
 
   call-workflow-1-in-local-repo:
     uses: asimmanzoor/java-github-action-app/.github/workflows/maven.yml@main
-    secrets:
-      GITHUB_TOKEN: ${{ secrets.MAVEN_LIB_TOKEN }}
+    secrets: inherit
     permissions:
       contents: read
       packages: write
