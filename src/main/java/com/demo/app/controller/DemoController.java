@@ -14,7 +14,7 @@ public class DemoController {
 
     @GetMapping("/demo")
     public String demo() {
-        return "Hello world from Demo App : " + utilService.getString() ;
+        return "Hello world from Demo Sample App : " + utilService.getString() ;
     }
     
     @GetMapping("/demo1")
