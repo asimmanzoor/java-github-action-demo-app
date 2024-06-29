@@ -19,7 +19,7 @@ jobs:
   call-workflow-1-in-local-repo:
     uses: asimmanzoor/java-github-action-app/.github/workflows/maven.yml@main
     secrets:
-      envPAT: ${{ secrets.MAVEN_LIB_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.MAVEN_LIB_TOKEN }}
     permissions:
       contents: read
       packages: write
